@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import { useState, useEffect } from 'react'
 import './App.css';
 import UserList from './components/UserList';
@@ -8,9 +7,7 @@ import ActivitiesList from './components/ActivitiesList';
 import Nav from './components/Nav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faDesktopAlt, } from '@fortawesome/free-solid-svg-icons'
-// import {formatDistanceToNow} from 'date-fns'
+
 
 
 const API = 'https://api.github.com/search/users?q=YOUR_NAME'

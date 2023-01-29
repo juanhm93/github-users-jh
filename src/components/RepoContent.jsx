@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDesktop,faCircle, faStar } from '@fortawesome/free-solid-svg-icons'
+import {formatDistanceToNow} from 'date-fns'
 
 function RepoContent({repo, colorLanguage, isCard}) {
   return (
@@ -25,6 +26,9 @@ function RepoContent({repo, colorLanguage, isCard}) {
       }
       { 
         repo.stargazers_count > 0 && (<span className='mb-0 text-muted mt-auto' style={{fontSize: '12px'}}><FontAwesomeIcon icon={faStar} style={{color:'#3572A5'}} /> {repo.stargazers_count}</span>)
+      }
+      {
+        !isCard &&  repo.updated_at &&(<span className='mb-0 text-muted mt-auto ms-2' style={{fontSize: '12px'}}> Updated {formatDistanceToNow(new Date(repo.updated_at), {addSuffix: true})}</span>)
       }
      </div>  
  

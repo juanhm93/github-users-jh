@@ -134,12 +134,12 @@ function App() {
 
 
       <div className='row justify-content-center'>
-        <div className='col-3'>
+        <div className='col-11 col-md-4 col-xl-3'>
           {
             Object.keys(user).length > 0 &&  <UserCard user={user} getFollowers={getFollowers} />
           }
         </div>
-        <div className='col-8'>
+        <div className='col-11 col-md-7 col-xl-8'>
           <Nav showView={showView} quantityRepos={quantityRepos} handleView={handleView} />
         
           {

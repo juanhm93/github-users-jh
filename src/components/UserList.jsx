@@ -10,7 +10,6 @@ const UserList = ({users, showRepo, getUserData}) => {
            <th scope="col">#</th>
            <th scope="col">User</th>
            <th scope="col">Profile</th>
-           {/* <th scope="col">Github</th> */}
          </tr>
        </thead>
        <tbody>

@@ -16,10 +16,6 @@ const UserListItem = ({user, index,showRepo,getUserData}) => {
     <td >
       <img src={user.avatar_url} className='image-table' alt={'image'+index} /> {user.login}
     </td>
-    {/* <td>
-      <button onClick={() => handleClickUser(user)} className='btn btn-primary'>Go profile</button>
-    </td> */}
-    
     <td> 
        <FontAwesomeIcon icon={faGithub} style={{fontSize: '30px', color:'#000'}}  onClick={() => handleClickUser(user)} />
       
